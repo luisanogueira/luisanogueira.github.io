@@ -1,0 +1,27 @@
+.flexbox {
+    max-width: 40rem;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.title, .content {
+    padding: 0 2rem;
+    color: #FF4B5C;
+}
+
+.title {
+    margin-bottom: 0;
+    font-size: clamp(2em, 2.5vw, 4rem);
+}
+
+.content {
+    font-size: clamp(1em, 1.5vw, 2rem);
+}
+
+.picture {
+    max-width: 90%;
+    height: auto;
+    border-radius: 2rem;
+}
