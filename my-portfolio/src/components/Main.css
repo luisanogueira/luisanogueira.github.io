@@ -1,9 +1,14 @@
 .flexbox {
-    max-width: 40rem;
+    max-width: 80%;
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+}
+
+@media (max-width: 767px) {
+    .flexbox {
+        flex-wrap: wrap;
+    }
 }
 
 .title, .content {
@@ -21,7 +26,8 @@
 }
 
 .picture {
-    max-width: 90%;
+    padding: 0 2rem;
+    max-height: 25rem;
     height: auto;
-    border-radius: 2rem;
+    border-radius: 10rem;
 }
