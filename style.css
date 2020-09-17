@@ -17,41 +17,43 @@ body {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    max-width: 70rem;
-}
-
-.image {
-    width: 100%;
-    text-align: center;
+    max-width: 100rem;
 }
 
 img {
-    height: 40em;
+    width: 100%;
+    text-align: center;
+    height: auto;
 }
 
-.text h2 {
-    font-size: clamp(1rem, 6vh, 5rem);
+.polygon img {
+    height: 20em;
 }
 
-.text p {
-    font-size: clamp(1rem, 3vh, 2rem);
+h2 {
+    font-size: clamp(2rem, 4.5vh, 5rem);
 }
 
-@media screen and (min-width: 1024px) {  
-    .flexbox {
-        margin: 0 auto;
-    }
+h3 > a {
+    font-size: clamp(1.5rem, 2.5vh, 4rem);
+}
 
+p {
+    font-size: clamp(1rem, 2vh, 2rem);
+}
+
+a {
+    color: #0D3B99;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1025px) {  
     .text {
-        flex: 4 1 0.7em;
+        flex: 4 1 0.6em;
     }
 
     .image {
         padding: 1em;
-        flex: 1 1 0.3em;
-    }
-
-    img {
-        height: 15em;
+        flex: 2 1 0.4em;
     }
 }
